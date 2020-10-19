@@ -151,6 +151,7 @@
     <ClCompile Include="Ivalue.cpp" />
     <ClCompile Include="Qvalue.cpp" />
     <ClCompile Include="Rvalue.cpp" />
+    <ClCompile Include="Task6.cpp" />
     <ClCompile Include="Tvalue.cpp" />
     <ClCompile Include="Uvalue.cpp" />
   </ItemGroup>

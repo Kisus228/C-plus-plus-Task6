@@ -1,11 +1,19 @@
+#include <iostream>
 #include "Tvalue.h"
+#include "Ivalue.h"
 
 Tvalue::Tvalue(const double value)
 {
 	val_ = value;
 }
 
-Qvalue Tvalue::operator*(Ivalue* ivalue) const
+Qvalue Tvalue::operator*(const Ivalue& ivalue) const
 {
-	return Qvalue(this->val_ * ivalue->get_value());
+	return Qvalue(val_ * ivalue.get_value());
+}
+
+std::ostream& operator<<(std::ostream& out, const Tvalue& tvalue)
+{
+	out << tvalue.val_ << " " << tvalue.short_name_;
+	return out;
 }
